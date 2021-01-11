@@ -1,0 +1,32 @@
+<br><br><br>
+<div class="container" style="margin: 8px">
+    <div class="row">
+      <div class="col-md-4" >
+        <img src="{{SelectedProduct.image}}" alt="" class="figure-img" style="width:250px;height:250px">
+      </div>
+      <div class="col-md-6" >
+        <h3 class="" style=" font-family: 'Anton', sans-serif; font-size: 20px;">
+         <b>{{SelectedProduct.title}}</b>
+        </h3>
+        <p class="lead text-danger" style=" font-family: 'Anton', sans-serif; font-size: 20px;">
+          {{SelectedProduct.price}}$
+        </p>
+        <p class="lead" style=" font-family: 'Anton', sans-serif; font-size: 18px;"><span class="lead text-danger">Category:</span>
+          {{SelectedProduct.category}}
+        </p>
+        <p class="lead" style=" font-family: 'Anton', sans-serif; font-size: 18px;">
+          {{SelectedProduct.description}}
+        </p><br><br>
+     
+       
+        <div class="row">
+      
+        <p class="lead">
+          <button class="btn btn-outline-primary mr-4" routerLink="/home">Continue Shopping</button>
+          <button class="btn btn-outline-primary" (click)="addCard(SelectedProduct)">Add to cart</button>
+        </p>
+    </div><br><br><br>
+      </div>
+    </div>
+  </div>
+  
